@@ -7,14 +7,14 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `gold`,
       marginBottom: `1.45rem`,
-	  boxShadow: `inset -1em -1em 6em rgba(0,0,0,0.5),
+	  boxShadow: `inset -1em -1em 6em rgba(0,0,0,0.3),
 		  0 0.3em 0.5em rgba(0,0,0,0.3)`, 
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 940,
         padding: 5,
       }}
     >
@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
           to="/"
           style={{
             color: `black`,
-			textShadow: `2px 5px 6px yellow`,
+			textShadow: `2px 2px 2px lightblue`,
             textDecoration: `none`,
           }}
         >
