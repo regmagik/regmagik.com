@@ -21,4 +21,4 @@ const ContactPage = () => (
   </Layout>
 )
 
-export default PaymentPage
+export default ContactPage
