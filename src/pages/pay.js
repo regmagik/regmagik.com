@@ -41,11 +41,13 @@ const PaymentPage = () => {
 				console.log('the license is...');
 				const license = await response.text();
 				console.log(license);
-				setState({ license: license });
+				setState({paid:true, license:license });
 			}}
 	    />
 	</PayPalScriptProvider>
-	{!state.license && <div>Your license code should be shown here... If you don''t see it after making a payment, please <a href='/contact'>contact us</a>.
+	{state.paid && <div>Your license code should be shown here... 
+		If you don't see it after making a payment or you need help using it, 
+		please <a href='/contact'>contact us</a>.
 	</div>}
 	{state.license && <div>
 		Thank you for your payment. Your license code is:
