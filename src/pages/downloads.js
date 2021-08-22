@@ -11,6 +11,7 @@ const SecondPage = () => (
     <p>Download the latest version of RegmagiK Registry Editor: v.4.10.5</p>
     <p>Windows 10 versions also run on Windows 8 and Windows 7. If you have Windows XP see <a href="#XP">the section for Windows XP</a> below.</p>
 	
+	<Link to="/pay">Trial expired? Order RegmagiK License here...</Link>
 	<h2>64-bit Windows 10</h2>
     <a href="/RegmagiK.x64.English.zip">RegmagiK.x64.English</a>
 	<h2>32-bit Windows 10</h2>

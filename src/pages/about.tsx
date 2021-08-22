@@ -16,7 +16,10 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <Seo title="The Purpose" />
     <h1>The Purpose of the Site</h1>
     <p>
-      This site was initially created to give people a way to <Link to="/downloads">download RegmagiK Registry Editor</Link>. As a nice bonus it gives me a playground to use web technologies and learn how they fit together.
+      This site was initially created to give people a way 
+	  to <Link to="/downloads">download RegmagiK Registry Editor</Link>. 
+	  As a nice bonus it gives me a playground to use web technologies and 
+	  learn how they fit together.
     </p>
     <p>
       If you often use Google to search for words selected in the text you read on the computer, you'll want to install <em>searchcut</em>, a tiny utility that will save you a few clicks each time you search for words selected in the text you read.

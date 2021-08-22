@@ -12,10 +12,11 @@ const PaymentPage = () => {
   <Layout>
     <Seo title="Order RegmagiK" />
     <h1>Order RegmagiK</h1>
-    <p>Your payment of $15 will grant you unlimited RegmagiK license to use on any number of PCs. Thank you. </p>
-    <p>Click below to make a payment using PayPal or credit/debit card.</p>
+    <p>Pay $15 and you will get an unlimited RegmagiK license to use on any number of PCs. Thank you. </p>
+    <p>After making a payment, look for your license below the PayPal buttons.</p>
+    <p>Click below to make a payment using PayPal or credit/debit card. </p>
 	<PayPalScriptProvider options={{ 
-		"client-id":"AUHHnRWzrEWKu2UwHwU1l3EAKL2jBzfSVN64_FsQbhaAJt0ZL3Tsge-gNa3ZMMs1b9N1KuLI79tug17I",
+		"client-id": "AUHHnRWzrEWKu2UwHwU1l3EAKL2jBzfSVN64_FsQbhaAJt0ZL3Tsge-gNa3ZMMs1b9N1KuLI79tug17I",
 		}}>
 		<PayPalButtons 
 			createOrder={(data, actions) => {
@@ -27,24 +28,37 @@ const PaymentPage = () => {
 							},
 						},
 					],
-			});
-		}}
-		onApprove={(data, actions) => {
-			return actions.order.capture().then(function(details) {
+				});
+			}}
+			onApprove={async (data, actions) => {
+				const details = await actions.order.capture();
+				console.log('paid by', details.payer.name.given_name);
 				const endpoint = 'https://digital-river.azurewebsites.net/api/Key?code=Wy8JVCdvKaR3WaOjluMMmbYln72IJoobyYNKDRmHXvOxVWatbjvwhQ==';
-				fetch(endpoint, {
+				const response = await fetch(endpoint, {
 					method: 'POST',
-					body: `FIRSTNAME=${details.payer.name.given_name}&LASTNAME=${details.payer.name.surname}&EMAIL=${details.payer.email_address}` 
-				}).then((response)=>setState({paid: true, license: response.text()}));
-				
-			});
-		  }}
+					body: `FIRSTNAME=${details.payer.name.given_name}&LASTNAME=${details.payer.name.surname}&EMAIL=${details.payer.email_address}`
+				});
+				console.log('the license is...');
+				const license = await response.text();
+				console.log(license);
+				setState({ license: license });
+			}}
 	    />
 	</PayPalScriptProvider>
-	{state.paid && <div>
+	{!state.license && <div>Your license code should be shown here... If you don''t see it after making a payment, please <a href='/contact'>contact us</a>.
+	</div>}
+	{state.license && <div>
 		Thank you for your payment. Your license code is:
+		<br/>
+		<br/>
 		<b>{state.license}</b>
-		</div>}
+		<br/>
+		<br/>
+		Please, copy and paste the whole line including digits, your name and email address into RegmagiK license code input.
+		<br/>
+		<br/>
+		Also, save it if you need it later... Enjoy your new tool.
+	</div>}
   </Layout>
 );
 }

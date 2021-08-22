@@ -25,12 +25,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `RegmagiK`} />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0 1.0rem 1.5rem`,
         }}
       >
         <main>{children}</main>
@@ -39,9 +39,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, both the RegmagiK Registry Editor and Searchcut as well as this site are built by Boris Guzner.
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="/contact">Comments? Problems? Questions? Need a site like this?</a>
         </footer>
       </div>
     </>
