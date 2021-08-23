@@ -1,18 +1,13 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6d976147-d126-48f0-8b87-8d9a6a30ec7a/deploy-status)](https://app.netlify.com/sites/regmagik/deploys)
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+# RegmagiK and Searchcut Web Site
+Web site for downloading RegmagiK Registry Editor, Searchcut.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+This project is based on the Gatsby default starter template for React. I added a Paypal payment integration. The site is hosted on Netlify at https://www.regmagik.com
 
-## 🚀 Quick start
+
+## 🚀 Gatsby Quick start steps
+_Need more templates? Check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
 1.  **Create a Gatsby site.**
 
