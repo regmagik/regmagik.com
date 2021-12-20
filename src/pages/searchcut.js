@@ -9,7 +9,7 @@ const SeearchcutPage = () => (
     <Seo title="Searchcut" />
     <h1>Searchcut</h1>
     <p>Download the latest version of Searchcut: v.1.5</p>
-    <a className='btn' href="searchcut.zip">Download Searchcut</a>
+    <a className='btn' href="/searchcut.zip">Download Searchcut</a>
   </Layout>
 )
 
