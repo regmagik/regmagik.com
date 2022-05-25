@@ -8,7 +8,8 @@ const SecondPage = () => (
   <Layout>
     <Seo title="Downloads" />
     <h1>RegmagiK Downloads</h1>
-    <p>Download the latest version of RegmagiK Registry Editor: v.4.10.5</p>
+    <p>Download the latest version of RegmagiK Registry Editor: v.4.10.6</p>
+    <p>The new feature in this version is: remember the last used sort column and direction in the right pane and search results pane. This was requested by Randy Scarborough. Have a feature you like added to RegmagiK or Searchcut? Contact us and explain what we could do.</p>
     <p>Windows 10 versions also run on Windows 8 and Windows 7. If you have Windows XP see <a href="#XP">the section for Windows XP</a> below.</p>
 	
 	<Link to="/pay">Trial expired? Order RegmagiK License here...</Link>
