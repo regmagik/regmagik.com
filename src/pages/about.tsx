@@ -29,6 +29,14 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       <a href="/searchcut/">
         Searchcut</a> page
       .
+	  </p>
+	<h2>Partners</h2>
+    <p>
+	Our software can be downloaded from software download sites like 
+	<Link to="https://www.softpedia.com/publisher/Boris-Guzner-39476.html">Softpedia</Link> 
+	or 
+	<Link to="https://download.cnet.com/developer/Guzner%20Software/i-6265956/">
+	cnet download.com</Link> as well as other shareware sites.
     </p>
 	<h2>Technical information</h2>
     <p>
