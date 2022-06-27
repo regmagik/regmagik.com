@@ -13,12 +13,10 @@ const SecondPage = () => (
 	<p>Trial expired? <Link to="/pay">Order RegmagiK License here...</Link></p>
 
 	<p>
-	<b>64-bit</b> <a href="/RegmagiK.x64.English.zip">RegmagiK.x64.English</a>
+	<b>64-bit English</b> <a href="/RegmagiK.x64.English.zip">RegmagiK.x64.English</a>
 	<br/>
-	<b>32-bit</b> <a href="/RegmagiK.Win32.English.zip">RegmagiK.Win32.English</a>
+	<b>32-bit English</b> <a href="/RegmagiK.Win32.English.zip">RegmagiK.Win32.English</a>
 	</p>
-	<p>Also available in French and German</p>
-
 	<p>
 	<b>64-bit French</b> <a href="/RegmagiK.x64.French.zip">RegmagiK.x64.French</a>
 	<br/>
