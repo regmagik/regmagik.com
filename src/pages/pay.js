@@ -33,10 +33,10 @@ const PaymentPage = () => {
 			onApprove={async (data, actions) => {
 				const details = await actions.order.capture();
 				console.log('paid by', details.payer.name.given_name);
-				const endpoint = 'https://digital-river.azurewebsites.net/api/Key?code=Wy8JVCdvKaR3WaOjluMMmbYln72IJoobyYNKDRmHXvOxVWatbjvwhQ==';
+				const endpoint = `https://temp-name.azurewebsites.net/api/key?name=${details.payer.name.given_name} ${details.payer.name.surname} ${details.payer.email_address}`;
 				const response = await fetch(endpoint, {
 					method: 'POST',
-					body: `FIRSTNAME=${details.payer.name.given_name}&LASTNAME=${details.payer.name.surname}&EMAIL=${details.payer.email_address}`
+					body: ``
 				});
 				console.log('the license is...');
 				const license = await response.text();
