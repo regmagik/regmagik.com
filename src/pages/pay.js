@@ -33,10 +33,10 @@ const PaymentPage = () => {
 			onApprove={async (data, actions) => {
 				const details = await actions.order.capture();
 				console.log('paid by', details.payer.name.given_name);
-				const endpoint = `https://temp-name.azurewebsites.net/api/key?name=${details.payer.name.given_name} ${details.payer.name.surname} ${details.payer.email_address}`;
+				const endpoint = `https://temp-name.azurewebsites.net`;
 				const response = await fetch(endpoint, {
 					method: 'POST',
-					body: ``
+					body: `${details.payer.name.given_name} ${details.payer.name.surname} ${details.payer.email_address}`
 				});
 				console.log('the license is...');
 				const license = await response.text();
