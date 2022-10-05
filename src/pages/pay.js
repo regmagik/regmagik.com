@@ -16,7 +16,7 @@ const PaymentPage = () => {
     <p>After making a payment, look for your license below the PayPal buttons.</p>
     <p>Click below to make a payment using PayPal or credit/debit card. </p>
 	<PayPalScriptProvider options={{ 
-		"client-id": "AbwoGQPgsyI72-L6wZFR8474aoBqit4mWXQL_KOWrywy2ThFn9dAZTKGb0edziD9m7BeIHuAqPWHsYhG",
+		"client-id": "AUHHnRWzrEWKu2UwHwU1l3EAKL2jBzfSVN64_FsQbhaAJt0ZL3Tsge-gNa3ZMMs1b9N1KuLI79tug17I",//prod
 		}}>
 		<PayPalButtons 
 			createOrder={(data, actions) => {
@@ -45,10 +45,6 @@ const PaymentPage = () => {
 			}}
 	    />
 	</PayPalScriptProvider>
-	{state.paid && <div>Your license code should be shown here... 
-		If you don't see it after making a payment or you need help using it, 
-		please <a href='/contact'>contact us</a>.
-	</div>}
 	{state.license && <div>
 		Thank you for your payment. Your license code is:
 		<br/>
@@ -60,6 +56,9 @@ const PaymentPage = () => {
 		<br/>
 		<br/>
 		Also, save it if you need it later... Enjoy your new tool.
+	</div>}
+	{state.paid && <div>If you don't see your license code above after making a payment or you need help using it, 
+		please <a href='/contact'>contact us</a>.
 	</div>}
   </Layout>
 );
