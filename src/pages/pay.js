@@ -16,7 +16,7 @@ const PaymentPage = () => {
     <p>After making a payment, look for your license below the PayPal buttons.</p>
     <p>Click below to make a payment using PayPal or credit/debit card. </p>
 	<PayPalScriptProvider options={{ 
-		"client-id": "AUHHnRWzrEWKu2UwHwU1l3EAKL2jBzfSVN64_FsQbhaAJt0ZL3Tsge-gNa3ZMMs1b9N1KuLI79tug17I",
+		"client-id": "AbwoGQPgsyI72-L6wZFR8474aoBqit4mWXQL_KOWrywy2ThFn9dAZTKGb0edziD9m7BeIHuAqPWHsYhG",//sandbox
 		}}>
 		<PayPalButtons 
 			createOrder={(data, actions) => {
