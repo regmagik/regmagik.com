@@ -7,7 +7,9 @@ import Seo from "../components/seo"
 
 export function Head() {
   return (
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0252080858300003" crossorigin="anonymous"></script>  )
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0252080858300003" crossorigin="anonymous">
+	  </script>  
+	  )
 }
 const IndexPage = () => (
   <Layout>
