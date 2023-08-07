@@ -1,6 +1,5 @@
 import * as React from "react"
-import Helmet from "react-helmet"
-import { Link } from "gatsby"
+import { Link, Script } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -9,10 +8,8 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
-	<Helmet>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0252080858300003" crossorigin="anonymous"></script>  
-	</Helmet>
+    <Seo title="regedit" />
+	<Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0252080858300003" crossorigin="anonymous" /> 
     <h1>RegmagiK Registry Editor</h1>
     <p>RegmagiK is advanced Windows Registry editor. Familiar regedit user interface with unique enhancements like fast search, drag-n-drop, autocomplete address bar, and integration with Windows Explorer make it great power user's tool. 
 	</p>
