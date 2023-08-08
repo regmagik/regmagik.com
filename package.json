@@ -1,32 +1,33 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "regmagik-web",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "RegmagiK downloads web site built with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Boris RegmagiK",
   "dependencies": {
-	"bootstrap": "^5.1.3",
-	"@paypal/react-paypal-js": "^7.2.1",
-    "gatsby": "^3.6.2",
-    "gatsby-plugin-gatsby-cloud": "^2.6.1",
-    "gatsby-plugin-image": "^1.6.0",
-    "gatsby-plugin-manifest": "^3.6.0",
-    "gatsby-plugin-offline": "^4.6.0",
-    "gatsby-plugin-react-helmet": "^4.6.0",
-    "gatsby-plugin-sharp": "^3.6.0",
-    "gatsby-source-filesystem": "^3.6.0",
-    "gatsby-transformer-sharp": "^3.6.0",
+    "@paypal/react-paypal-js": "^7.2.1",
+    "bootstrap": "^5.3.1",
+    "gatsby": "^5.11.0",
+    "gatsby-plugin-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-transformer-sharp": "^5.11.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-	"reactstrap": "^8.10.0",
-   	"react-helmet": "^6.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reactstrap": "^9.2.0"
   },
+"overrides": {
+  "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+    "react": "^18.2.0"
+  }
+},
   "devDependencies": {
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "regmagik, gatsby"
   ],
   "license": "0BSD",
   "scripts": {
@@ -40,9 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/regmagik/regmagik.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/regmagik/regmagik.com/issues"
   }
 }

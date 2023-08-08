@@ -30,12 +30,11 @@ export function Menu({siteTitle}) {
 	  }));
 	}
   
-	return (
+	return (<>
 		<Navbar className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow">
-			<NavbarBrand className="text-light" tag={Link} href="/"> {siteTitle} </NavbarBrand>
-			<i>The joy of personal computing</i>
+			<NavbarBrand className="text-light" tag={Link} to=".."> {siteTitle} </NavbarBrand>
 
-			<NavbarToggler onClick={toggleNavbar} className="mr-2" />
+		<NavbarToggler onClick={toggleNavbar} className="mr-1" />
 			<Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!state.collapsed} navbar>
 			<Nav>
 				<NavItem>
@@ -56,7 +55,8 @@ export function Menu({siteTitle}) {
 			</Nav>
 			</Collapse>
 		</Navbar>
-	);
+			<i>The joy of personal computing</i>
+	</>);
 }
 
 

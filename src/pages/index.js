@@ -1,17 +1,19 @@
 import * as React from "react"
-import { Link, Script } from "gatsby"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+export const Head = () => <> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0252080858300003" crossOrigin="anonymous" /> </>
+
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="regedit" />
-	<Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0252080858300003" crossorigin="anonymous" /> 
+    <Seo title="Welcome" />
     <h1>RegmagiK Registry Editor</h1>
-    <p>RegmagiK is advanced Windows Registry editor. Familiar regedit user interface with unique enhancements like fast search, drag-n-drop, autocomplete address bar, and integration with Windows Explorer make it great power user's tool. 
+    <p>RegmagiK is a Windows Registry editor for users familiar with regedit.exe. Similar user interface with unique enhancements like fast search, drag-n-drop, autocomplete address bar, and integration with Windows Explorer make it great power user's tool. 
 	</p>
 <h2>Drag and drop support</h2>
 	<p>Create shortcuts to any Registry key or value on desktop - Drag-n-drop (or cut and paste) selected keys or values 
@@ -41,7 +43,7 @@ You can use RegmagiK even if access to the standard regedit is disabled by your 
     <h2>
 	One of RegmagiK users wrote this review:
 	</h2><p>
-"I would like to thank you Boris for writing this wonderful RegmagiK software. It has helped me to resolve many registry problems I have had on my computer. I discovered your software by search when my computer was infected by a nasty virus. This virus had locked me out of my registry and modified data to keep me from running virus scans. I new the only solution would be a third party software to grant me access to my registry. After discovering this wonderful software, I was able access my registry and make the changes needed to return my computer to an operable state and successfully remove the virus. This is only one of it's near infinite abilities. One of my favorite features is the ability to bookmark important keys for near instant access. This prevents hours of searching for a key who's location you had forgotten. I strongly recommend this software to any registry enthusiast. Thank you for giving this software to the world.
+I would like to thank you Boris for writing this wonderful RegmagiK software. It has helped me to resolve many registry problems I have had on my computer. I discovered this site by search when my computer was infected by a nasty virus. This virus had locked me out of my registry and modified data to keep me from running virus scans. I knew the only solution would be a third party software to grant me access to my registry. After discovering this wonderful software, I was able to access my registry and make the changes needed to return my computer to an operable state and successfully remove the virus. One of my favorite features is the ability to bookmark important keys for near instant access. This prevents hours of searching for a key who's location you had forgotten. I strongly recommend this software to any registry enthusiast. Thank you for giving this software to the world.
 </p><p>
 
 Best Regards,
@@ -50,8 +52,8 @@ Best Regards,
 Shaun"
 </p>
 <p>
-      <Link to="/downloads/">Go to Downloads page</Link> <br />
-      <Link to="/about/">About this site</Link>
+      <Link to="downloads">Go to Downloads page</Link> <br />
+      <Link to="about">About this site</Link>
     </p>
   </Layout>
 )
