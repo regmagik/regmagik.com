@@ -4,6 +4,9 @@
   "description": "RegmagiK downloads web site built with Gatsby",
   "version": "0.1.0",
   "author": "Boris RegmagiK",
+  "engines": {
+    "node": ">=18.0.0 "
+  },
   "dependencies": {
     "@paypal/react-paypal-js": "^7.2.1",
     "bootstrap": "^5.3.1",
