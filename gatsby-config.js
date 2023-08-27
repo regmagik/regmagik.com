@@ -3,6 +3,7 @@ module.exports = {
     title: `RegmagiK`,
     description: `The new RegmagiK site using Gatsby.`,
     author: `Boris Guzner gatsby-config@regmagik.com`,
+	siteUrl: `https://www.RegmagiK.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
