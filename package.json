@@ -28,6 +28,7 @@
     }
   },
   "devDependencies": {
+    "gatsby-plugin-sitemap": "^6.12.0",
     "prettier": "2.2.1"
   },
   "keywords": [
