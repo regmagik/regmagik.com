@@ -1,13 +1,19 @@
 import * as React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+const endpoint = `https://temp-name.azurewebsites.net`;
 
 const PaymentPage = () => {
 	const [state, setState] = React.useState({});
+	React.useEffect(async () => {
+		console.log('on pay page');
+		const response = await fetch(endpoint);
+		console.log('response', response.ok);
+	}, []);
 	return (
   <Layout>
     <Seo title="Order RegmagiK" />
@@ -33,7 +39,6 @@ const PaymentPage = () => {
 			onApprove={async (data, actions) => {
 				const details = await actions.order.capture();
 				console.log('paid by', details.payer.name.given_name);
-				const endpoint = `https://temp-name.azurewebsites.net`;
 				const response = await fetch(endpoint, {
 					method: 'POST',
 					body: `${details.payer.name.given_name} ${details.payer.name.surname} ${details.payer.email_address}`
@@ -55,10 +60,10 @@ const PaymentPage = () => {
 		Please, copy and paste the whole line including digits, your name and email address into RegmagiK license code input.
 		<br/>
 		<br/>
-		Also, save it if you need it later... Enjoy your new tool.
+		Also, save it, you may need it later... Enjoy your new tool.
 	</div>}
 	{state.paid && <div>If you don't see your license code above after making a payment or you need help using it, 
-		please <a href='/contact'>contact us</a>.
+      <Link to="/contact">contact us</Link>.
 	</div>}
   </Layout>
 );
