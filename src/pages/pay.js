@@ -9,10 +9,13 @@ const endpoint = `https://temp-name.azurewebsites.net`;
 
 const PaymentPage = () => {
 	const [state, setState] = React.useState({});
-	React.useEffect(async () => {
+	React.useEffect( () => {
 		console.log('on pay page');
-		const response = await fetch(endpoint);
-		console.log('response', response.ok);
+		async function init(){
+			const response = await fetch(endpoint);
+			console.log('response', response.ok);
+		}
+		init();
 	}, []);
 	return (
   <Layout>
@@ -27,6 +30,13 @@ const PaymentPage = () => {
 		<PayPalButtons 
 			createOrder={(data, actions) => {
 				return actions.order.create({
+					payment_source: {
+						paypal: {
+							experience_context:{
+							 	shipping_preference: "NO_SHIPPING"
+							}
+						}
+					},
 					purchase_units: [
 						{
 							amount: {
