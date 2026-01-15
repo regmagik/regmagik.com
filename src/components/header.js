@@ -47,7 +47,7 @@ export function Menu({siteTitle}) {
 				<Link className="nav-link text-light" to="/pay">Order</Link>
 				</NavItem>
 				<NavItem>
-				<Link className="nav-link text-light" to="/searchcut">More...</Link>
+				<Link className="nav-link text-light" to="/searchcut">Searchcut</Link>
 				</NavItem>
 				<NavItem>
 				<Link className="nav-link text-light" to="/contact">Contact</Link>
