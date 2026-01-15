@@ -29,10 +29,11 @@ const SecondPage = () => (
 	</p>
 
 	<h2 id="XP">RegmagiK for Windows XP</h2>
-	<b>64-bit Windows XP</b> <a href="/RegmagiKXP.zip">RegmagiK 64-bit for Windows XP, in English</a>
+	<p><b>64-bit Windows XP</b> <a href="/RegmagiKXP.zip">RegmagiK 64-bit for Windows XP, in English</a>
 	<br/>
 	<b>32-bit Windows XP</b> <a href="/RegmagiK32XP.zip">RegmagiK 32-bit for Windows XP, in English</a>
-
+	</p>
+	
 	<h2 id="HELP">RegmagiK Help Files</h2>
 	<p>Save the file to the same folder where executable file (RegmagiK.exe) is located. You should be able to open the RegmagiK.chm file by opening it directly from File Explorer. 
 		You can also use the Help menu Help Topics command or keyboard shortcut <code>F1</code>. 
