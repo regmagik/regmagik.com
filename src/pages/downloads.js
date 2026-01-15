@@ -32,7 +32,16 @@ const SecondPage = () => (
 	<b>64-bit Windows XP</b> <a href="/RegmagiKXP.zip">RegmagiK 64-bit for Windows XP, in English</a>
 	<br/>
 	<b>32-bit Windows XP</b> <a href="/RegmagiK32XP.zip">RegmagiK 32-bit for Windows XP, in English</a>
-  </Layout>
+
+	<h2 id="HELP">RegmagiK Help Files</h2>
+	<p>Save the file to the same folder where executable file (RegmagiK.exe) is located. You should be able to open the RegmagiK.chm file by opening it directly from File Explorer. 
+		You can also use the Help menu Help Topics command or keyboard shortcut <code>F1</code>. 
+		To get help on a speific toolbar button in RegmagiK you can use keyboard shortcut <code>SHIFT+F1</code> then click on the toolbar button.  
+		The name of the .chm file should match your RegmagiK executable file name. 
+		For example, if your RegmagiK executable is named RegmagiK.x64.English.exe, the help file should be RegmagiK.x64.English.chm.   
+	</p>
+	<b>RegmagiK Help for Windows 11</b> <a href="/RegmagiK.chm">RegmagiK.chm, in English</a>
+</Layout>
 )
 
 export default SecondPage
